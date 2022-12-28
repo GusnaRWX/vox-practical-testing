@@ -1,0 +1,22 @@
+.base {
+  margin-top: 70px;
+  background-color: #fff;
+}
+
+@include medium {
+  .base {
+    margin-top: 90px;
+  }
+}
+
+@include large {
+  .base {
+    margin-top: 90px;
+  }
+}
+
+@include extraLarge {
+  .base {
+    margin-top: 90px;
+  }
+}

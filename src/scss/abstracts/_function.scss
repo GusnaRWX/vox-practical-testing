@@ -1,0 +1,33 @@
+@function theme-color($key: "second-main") {
+  @return map-get($themes, $key);
+}
+
+// Colors
+@function color($key: "main-color") {
+  @return map-get($colors, $key);
+}
+
+// Breakpoints
+@function breakpoint($key: "md") {
+  @return map-get($breakpoints, $key);
+}
+
+@function text-color($key: "main-color") {
+  @return map-get($text-color, $key);
+}
+
+@function asset($type, $path) {
+  @return url($type + $path);
+}
+
+@function image($path) {
+  @return asset('../../../public/images/', $path);
+}
+
+@function font($path) {
+  @return asset('../../../public/fonts/', $path);
+}
+
+@function icon($path) {
+  @return asset('../../../public/icons/', $path);
+}

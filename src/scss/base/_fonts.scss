@@ -1,0 +1,21 @@
+@font-face {
+  font-family: $font-normal;
+  src: font('Text/Nunito-Light.ttf');
+}
+
+// Font Regular
+@font-face {
+  font-family: $font-regular;
+  src: font('Text/Nunito-Regular.ttf');
+}
+
+// Font Bold
+@font-face {
+  font-family: $font-bold;
+  src: font('Text/Nunito-Bold.ttf');
+}
+
+@font-face {
+  font-family: $font-headline-regular;
+  src: font('Headline/FjallaOne-Regular.ttf');
+}

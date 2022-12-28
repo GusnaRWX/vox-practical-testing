@@ -1,0 +1,7 @@
+.textfield {
+  @extend %textfield;
+
+  &-error {
+    border: 2px solid color('error')
+  }
+}

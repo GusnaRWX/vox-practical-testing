@@ -1,0 +1,16 @@
+/* eslint-disable react-hooks/exhaustive-deps */
+import { useEffect } from "react";
+
+export const useClickAwayListener = (ref, callback = () => { }) => {
+  useEffect(() => {
+    function handleClickOutside (event) {
+      if (ref.current && !ref.current.contains(event.target)) {
+        callback()
+      }
+    }
+    document.addEventListener('mousedown', handleClickOutside)
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutside)
+    }
+  }, [ref])
+}

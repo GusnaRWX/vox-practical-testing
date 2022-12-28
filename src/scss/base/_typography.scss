@@ -1,0 +1,59 @@
+body {
+  color: text-color('primary-black');
+  font-family: $font-regular;
+  background: color('background');
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span {
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $font-headline-regular;
+}
+
+.headline-1 {
+  font-family: $font-headline-regular;
+  font-size: 3rem;
+  line-height: 40px;
+  font-weight: 700;
+}
+
+@include medium {
+  .headline-1 {
+    font-family: $font-headline-regular;
+    font-size: 4rem;
+    line-height: 40px;
+    font-weight: 700;
+  }
+}
+
+@include large {
+  .headline-1 {
+    font-family: $font-headline-regular;
+    font-size: 4rem;
+    line-height: 40px;
+    font-weight: 700;
+  }
+}
+
+@include extraLarge {
+  .headline-1 {
+    font-family: $font-headline-regular;
+    font-size: 4rem;
+    line-height: 40px;
+    font-weight: 700;
+  }
+}

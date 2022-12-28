@@ -1,0 +1,21 @@
+$md: breakpoint('md');
+$lg: breakpoint('lg');
+$xl: breakpoint('xl');
+
+@mixin medium {
+  @media screen and (min-width: $md) and (max-width: $lg) {
+    @content;
+  }
+}
+
+@mixin large {
+  @media screen and (min-width: $lg) and (max-width: $xl) {
+    @content;
+  }
+}
+
+@mixin extraLarge {
+  @media screen and (min-width: $xl) {
+    @content;
+  }
+}
